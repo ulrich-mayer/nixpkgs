@@ -38725,6 +38725,8 @@ with pkgs;
 
   fxlinuxprint = callPackage ../misc/cups/drivers/fxlinuxprint { };
 
+  brscan3 = callPackage ../applications/graphics/sane/backends/brscan3 { };
+
   brscan4 = callPackage ../applications/graphics/sane/backends/brscan4 { };
 
   brscan5 = callPackage ../applications/graphics/sane/backends/brscan5 { };
