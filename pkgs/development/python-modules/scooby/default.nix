@@ -26,8 +26,8 @@ buildPythonPackage rec {
   };
 
   postPatch = ''
-    # Drop broken version specifier
-    sed -i '/python_requires/d' setup.py
+    substituteInPlace setup.py \
+      --replace "python_requires='>=3.7.*'" "python_requires='>=3.7'"
   '';
 
   SETUPTOOLS_SCM_PRETEND_VERSION = version;

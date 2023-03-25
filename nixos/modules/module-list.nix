@@ -95,7 +95,6 @@
   ./hardware/video/bumblebee.nix
   ./hardware/video/capture/mwprocapture.nix
   ./hardware/video/displaylink.nix
-  ./hardware/video/hidpi.nix
   ./hardware/video/nvidia.nix
   ./hardware/video/switcheroo-control.nix
   ./hardware/video/uvcvideo/default.nix
@@ -104,7 +103,6 @@
   ./hardware/xone.nix
   ./hardware/xpadneo.nix
   ./i18n/input-method/default.nix
-  ./i18n/input-method/fcitx.nix
   ./i18n/input-method/fcitx5.nix
   ./i18n/input-method/hime.nix
   ./i18n/input-method/ibus.nix
@@ -220,6 +218,7 @@
   ./programs/proxychains.nix
   ./programs/qdmr.nix
   ./programs/qt5ct.nix
+  ./programs/regreet.nix
   ./programs/rog-control-center.nix
   ./programs/rust-motd.nix
   ./programs/screen.nix
@@ -377,7 +376,7 @@
   ./services/continuous-integration/jenkins/default.nix
   ./services/continuous-integration/jenkins/job-builder.nix
   ./services/continuous-integration/jenkins/slave.nix
-  ./services/continuous-integration/woodpecker/agent.nix
+  ./services/continuous-integration/woodpecker/agents.nix
   ./services/continuous-integration/woodpecker/server.nix
   ./services/databases/aerospike.nix
   ./services/databases/cassandra.nix
@@ -512,6 +511,7 @@
   ./services/hardware/usbmuxd.nix
   ./services/hardware/usbrelayd.nix
   ./services/hardware/vdr.nix
+  ./services/hardware/keyd.nix
   ./services/home-automation/evcc.nix
   ./services/home-automation/home-assistant.nix
   ./services/home-automation/zigbee2mqtt.nix
@@ -735,6 +735,7 @@
   ./services/monitoring/nagios.nix
   ./services/monitoring/netdata.nix
   ./services/monitoring/parsedmarc.nix
+  ./services/monitoring/prometheus/alertmanager-irc-relay.nix
   ./services/monitoring/prometheus/alertmanager.nix
   ./services/monitoring/prometheus/default.nix
   ./services/monitoring/prometheus/exporters.nix
@@ -1133,7 +1134,6 @@
   ./services/web-apps/atlassian/confluence.nix
   ./services/web-apps/atlassian/crowd.nix
   ./services/web-apps/atlassian/jira.nix
-  ./services/web-apps/baget.nix
   ./services/web-apps/bookstack.nix
   ./services/web-apps/calibre-web.nix
   ./services/web-apps/coder.nix
@@ -1212,6 +1212,7 @@
   ./services/web-apps/zabbix.nix
   ./services/web-servers/agate.nix
   ./services/web-servers/apache-httpd/default.nix
+  ./services/web-servers/authelia.nix
   ./services/web-servers/caddy/default.nix
   ./services/web-servers/darkhttpd.nix
   ./services/web-servers/fcgiwrap.nix
