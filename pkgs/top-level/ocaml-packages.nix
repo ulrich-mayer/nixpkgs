@@ -263,10 +263,7 @@ let
 
     cstruct-unix = callPackage ../development/ocaml-modules/cstruct/unix.nix {};
 
-    csv =
-      if lib.versionAtLeast ocaml.version "4.2"
-      then callPackage ../development/ocaml-modules/csv { }
-      else callPackage ../development/ocaml-modules/csv/1.5.nix { };
+    csv = callPackage ../development/ocaml-modules/csv { };
 
     csv-lwt = callPackage ../development/ocaml-modules/csv/lwt.nix { };
 
@@ -897,6 +894,8 @@ let
     magic = callPackage ../development/ocaml-modules/magic { };
 
     magic-mime = callPackage ../development/ocaml-modules/magic-mime { };
+
+    magic-trace = callPackage ../development/ocaml-modules/magic-trace { };
 
     mariadb = callPackage ../development/ocaml-modules/mariadb {
       inherit (pkgs) mariadb;
